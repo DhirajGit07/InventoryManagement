@@ -1,0 +1,40 @@
+{
+  "name": "inventory-app",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.1",
+    "@mui/material": "^6.1.1",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0",
+    "material-ui-dropzone": "^3.5.0",
+    "md5": "^2.3.0",
+    "react-bootstrap": "^2.10.4",
+    "react-confetti": "^6.1.0",
+    "react-router-dom": "^6.26.2",
+    "react-slick": "^0.30.2",
+    "react-sweetalert": "^0.0.1",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.14.1",
+    "twilio": "^5.3.3"
+  },
+  "author": "Dhiraj",
+  "private": true,
+  "workspaces": [
+    "extensions/*",
+    "web",
+    "web/frontend"
+  ]
+}
