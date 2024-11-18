@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
@@ -52,7 +50,6 @@ const BuyNow = () => {
                 console.log('Payment data saved:', response.data);
                 generateReceipt(orderId);
                 setShowConfetti(true);
-
                 // SweetAlert success message
                 Swal.fire({
                     title: 'Payment Successful!',
@@ -60,7 +57,7 @@ const BuyNow = () => {
                     icon: 'success',
                     confirmButtonText: 'OK'
                 }).then(() => {
-                    setShowConfetti(false); // Hide confetti after closing SweetAlert
+                    setShowConfetti(false); 
                 });
             })
             .catch((error) => {
